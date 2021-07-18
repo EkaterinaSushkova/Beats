@@ -59,10 +59,16 @@ margin-right: rem(20px);
     &--textarea {
         height: rem(150px);
         resize: none;
+        @include tablets {
+            height: rem(85px);
+        }
     }
 
     &:focus {
         border: solid rem(4px) $pink;
+    }
+    @include tablets {
+        padding: rem(7px) rem(11px);
     }
 } 
 .form__controls {
@@ -70,6 +76,9 @@ margin-right: rem(20px);
     flex-wrap: wrap;
     margin-bottom: rem(30px);
     margin-top: rem(30px);
+    @include tablets {
+        padding: rem(20px);
+    }
 }
 .form__btns {
     display: flex;

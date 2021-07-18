@@ -64,6 +64,9 @@ $pink: #E01F3D;
     margin-bottom: rem(20px);
     margin-top: rem(10px);
     text-transform: uppercase;
+    @include tablets {
+        padding: 0 10%;
+    }
 }
 .hero__title--desc {
     font-size: rem(21px);
@@ -72,7 +75,7 @@ $pink: #E01F3D;
     font-family: "Alegreya Sans", Helvetica, sans-serif;
 
     @include tablets {
-        padding: 0 30%;
+        padding: 0 24%;
     }
 }
 .hero__section-wrap {

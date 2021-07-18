@@ -50,6 +50,10 @@ height: rem(260px);
 }
 .reviews__text {
     margin-bottom: rem(36px);
+    @include tablets {
+        margin-left: 0;
+    }
+
 }
 .reviews__author {
     font-size: rem(18px);
