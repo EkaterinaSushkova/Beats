@@ -1,0 +1,23 @@
+.contacts-container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+padding: 1.5rem 0 3.75rem;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: rem(18px);
+}
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+}
+.footer__contacts-address {
+    text-decoration: none;
+}
