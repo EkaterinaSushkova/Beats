@@ -6,17 +6,14 @@
     align-items: flex-start;
     font-size: rem(18px);
 }
-.phone-number {
+.phone-number.header__phone-number {
     @include tablets {
         display:none;
-    }
-    &:hover {
-        color: $pink;
     }
 }
 .menu {
     margin: 0;
-    padding-top: rem(5px);
+    padding-top: 5px;
     @include tablets {
         display:none;
     }
