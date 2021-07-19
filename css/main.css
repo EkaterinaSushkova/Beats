@@ -982,17 +982,21 @@ padding:0;
   border-radius: 0.625rem;
   margin: 0.0625rem; }
 
+.contacts-section {
+  position: relative; }
+
 .footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.4375rem 0; }
+  padding: 1.4375rem 0;
+  position: absolute;
+  background-color: #fff; }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: absolute; }
+  align-items: center; }
   @media screen and (max-width: 480px) {
     .footer-container {
       flex-direction: column; } }

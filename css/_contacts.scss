@@ -1,15 +1,19 @@
+.contacts-section {
+position: relative;
+}
 .footer {
 bottom: 0;
 left: 0;
 right: 0;
 padding: rem(23px) 0; 
+position: absolute;
+background-color: #fff;
 }
 
 .footer-container {
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: absolute;
     @include phones {
     flex-direction: column;
     }
