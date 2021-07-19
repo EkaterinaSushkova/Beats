@@ -15,33 +15,33 @@ $white: #fff;
 //z-indexes
 $z-fixed-menu: 100;
 
-@import "media";
+@import "_media";
 
 //normalize
-@import "normalize";
+@import "_normalize";
 
 //setups
 @import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&display=swap>);
-@import "layout";
+@import "_layout";
 
 // components
-@import "hero";
-@import "header";
-@import "features";
-@import "feature";
-@import "btn";
-@import "section";
-@import "headline";
-@import "benefits";
-@import "benefit";
-@import "benefits-section";
-@import "reviews";
-@import "interactive-avatar";
-@import "order";
-@import "radio";
-@import "fixed-menu";
-@import "hamburger";
-@import "contacts";
+@import "_hero";
+@import "_header";
+@import "_features";
+@import "_feature";
+@import "_btn";
+@import "_section";
+@import "_headline";
+@import "_benefits";
+@import "_benefit";
+@import "_benefits-section";
+@import "_reviews";
+@import "_interactive-avatar";
+@import "_order";
+@import "_radio";
+@import "_fixed-menu";
+@import "_hamburger";
+@import "_contacts";
 
 
 

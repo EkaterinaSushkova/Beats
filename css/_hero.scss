@@ -11,7 +11,8 @@ $pink: #E01F3D;
     color: $black;
     position: relative;
 
-    &::before, &:after {
+
+    &:before, &:after {
        @include tablets {
            display: none;
        }
@@ -41,7 +42,7 @@ $pink: #E01F3D;
         text-align: center;
 
         &:before {
-            content:url("../img/ellipse.png") ;
+            content:url("../img/ellipse.png");
         }
     }
     @include phones {
