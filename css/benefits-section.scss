@@ -1,0 +1,19 @@
+.benefits-section {
+    position: relative;
+    bottom: rem(-40px);
+    left: 2%;
+    &:before {
+        position: absolute;
+        bottom: rem(-30px);
+        left: 2%;
+        content: "";
+        width: rem(40px);
+        height: rem(40px);
+        background-color: $pink;
+        transform: rotate(-135deg);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        @include phones {
+        display: none;
+        }
+    }
+} 

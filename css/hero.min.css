@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$gray\".\A         on line 3 of /Users/ekaterinasushkova/Desktop/Beats/css/hero.scss\A \A 1: .hero {\A 2:     background: url(../beats/img/ellipse.png)  top 50% right 20% no-repeat;\A 3:     background-color: $gray;\A 4: }"}
