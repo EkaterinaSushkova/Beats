@@ -42,7 +42,12 @@ $pink: #E01F3D;
         text-align: center;
 
         &:before {
-            content:url("../img/ellipse.png");
+            content:"";
+            background-image:  url("../img/ellipse.png");
+            width: 450px;
+            width: 450px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     @include phones {
@@ -55,7 +60,12 @@ $pink: #E01F3D;
         text-align: center;
 
         &:before {
-            content:url("../img/ellipse.png") ;
+            content:"";
+            background-image:  url("../img/ellipse.png");
+            width: 250px;
+            width: 250px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }

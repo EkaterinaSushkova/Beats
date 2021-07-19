@@ -12,7 +12,6 @@
     <body>
         <div class="wrapper">
             <div class="maincontent">
-
                 <section class="section hero">
                     <div class="container hero__container">
                         <header class="header">
@@ -68,10 +67,10 @@
                             <ul class="features">
                                 <li class="features__item feature">
                                     <div class="feature__icon">
-                                        <picture>
-                                            <source media="(min-width:768px)" srcset="./img/noises.svg">
-                                            <img src="" class="hello_features__link">
-                                        </picture>
+                                        <svg class="hello_features__link">
+                                            <use xlink:href="./sprite.svg#noises">
+                                            </use>
+                                        </svg>
                                     </div>
                                     <div class="feature__text">Безупречный звук</div>  
                                 </li>
