@@ -78,7 +78,6 @@ $pink: #E01F3D;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     padding: rem(24px) 0 rem(60px);
 }
 .hero__main-title {
@@ -108,15 +107,22 @@ $pink: #E01F3D;
 .hero__section-wrap {
     display:flex;
     align-items: center;
+    @include tablets {
+        flex-direction: column;
+    }
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .hero__image-section {
     transform: translate(rem(10px), rem(40px));
-
     @include tablets {
-    display: none; 
+        order:-1;
+        transform: translate(0,0);
+        margin-bottom: rem(40px);
     }
     @include phones {
-        display: none; 
+    max-width:70% 
     }
 }

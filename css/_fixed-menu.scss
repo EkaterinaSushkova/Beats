@@ -10,7 +10,7 @@
 .fixed-menu__item--active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link {
     border-color: $pink;
 }
-.fixed-menu__item--active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link:before {
+.fixed-menu__item--active .fixed-menu__link:before, .fixed-menu__item:hover .fixed-menu__link:before {
     background-color: $pink;
 }
 

@@ -30,8 +30,10 @@ body {
 .wrapper{
     position: relative;
     width: 100%;
-    min-height: 100%;
-    overflow: hidden;
+    height: 100%;
+}
+.maincontent {
+    height: 100%;
 }
 .container {
     width: 95%;
