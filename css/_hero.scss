@@ -40,15 +40,6 @@ $pink: #E01F3D;
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        &:before {
-            content:"";
-            background-image:  url("./img/ellipse.png");
-            width: 450px;
-            width: 450px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
     }
     @include phones {
         width: 70%;
@@ -58,15 +49,6 @@ $pink: #E01F3D;
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        &:before {
-            content:"";
-            background-image:  url("./img/ellipse.png");
-            width: 250px;
-            width: 250px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
     }
 }
 .hero__icons-section {
