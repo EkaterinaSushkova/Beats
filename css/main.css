@@ -1027,7 +1027,7 @@ padding:0;
   margin-right: 3px; }
 
 .fullscreen-menu {
-  display: flex;
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
