@@ -374,7 +374,6 @@ img {
 .hero {
   background-color: #F5F5F5;
   min-height: 50%;
-  min-height: 40.625rem;
   color: #292929;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -1026,5 +1025,27 @@ padding:0;
 
 .social__item {
   margin-right: 3px; }
+
+.fullscreen-menu {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #666666;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; }
+
+.menu--vertical {
+  display: flex; }
+
+.menu--vertical .menu__list {
+  flex-direction: column;
+  color: white;
+  font-size: 36px; }
+  .menu--vertical .menu__list :hover {
+    color: #E01F3D; }
 
 /*# sourceMappingURL=main.css.map */
