@@ -173,8 +173,8 @@
                                 <img src="./img/ellipsetwo.png" class="products__image">
                             </div>
                             <div class="products__title-section">
-                                <div class="products__image-wrapper">
-                                    <svg class="slider__icon" id="btnactive">
+                                <div class="products__image-wrapper" id="btnactive">
+                                    <svg class="slider__icon">
                                         <use xlink:href="./sprite.svg#click">
                                         </use>
                                     </svg>                                       
@@ -450,6 +450,8 @@
         <script>
             const hamburgerButton = document.querySelector('#hamburgerButton');
             const active = document.querySelector('#active');
+            const slidermenu = document.querySelector('#slidermenu');
+            const btnactive = document.querySelector('#btnactive');
 
             hamburgerButton.addEventListener('click',function() {
                 active.style.display = 'flex'
@@ -458,14 +460,11 @@
                 active.style.display = 'none'
             });
 
-            const slidermenu = document.querySelector('#slidermenu');
-            const btnactive = document.querySelector('#btnactive');
-
             slidermenu.addEventListener('click',function() {
-                active.style.display = 'flex'
+                active.style.display = 'none'
             });
             btnactive.addEventListener('click',function() {
-                active.style.display = 'none'
+                active.style.display = 'flex'
             });
         </script>
     </body>

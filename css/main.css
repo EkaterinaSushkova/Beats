@@ -1192,10 +1192,10 @@ padding:0;
 .slider__menu {
   display: none;
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 50px;
+  right: 50px;
+  top: 50px;
+  bottom: 50px;
   background: #666666;
   align-items: center;
   justify-content: center;
