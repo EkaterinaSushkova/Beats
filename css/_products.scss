@@ -116,10 +116,10 @@ display: flex;
 }
 
 .product-slider__arrow--direction--back{
-        left: 0px;
+    left: -50px;
     }
 .product-slider__arrow--direction--next{
-        right: 0;
+    right: -50px;
     }
 .info__card__feature-bold {
     margin-right: rem(30px);
