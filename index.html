@@ -450,8 +450,6 @@
         <script>
             const hamburgerButton = document.querySelector('#hamburgerButton');
             const active = document.querySelector('#active');
-            const slidermenu = document.querySelector('#slidermenu');
-            const btnactive = document.querySelector('#btnactive');
 
             hamburgerButton.addEventListener('click',function() {
                 active.style.display = 'flex'
@@ -459,14 +457,16 @@
             active.addEventListener('click',function() {
                 active.style.display = 'none'
             });
+
+            const slidermenu = document.querySelector('#slidermenu');
+            const btnactive = document.querySelector('#btnactive');
+
             slidermenu.addEventListener('click',function() {
                 active.style.display = 'flex'
             });
             btnactive.addEventListener('click',function() {
                 active.style.display = 'none'
             });
-
-
         </script>
     </body>
 </html>

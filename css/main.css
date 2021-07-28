@@ -1210,4 +1210,7 @@ padding:0;
   .slider__menu--vertical .menu__list :hover {
     color: #E01F3D; }
 
+.btnactive {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
