@@ -1192,11 +1192,12 @@ padding:0;
 .slider__menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 5.625rem;
   background: #666666;
   align-items: center;
   justify-content: center;
-  z-index: 2; }
+  z-index: 2;
+  width: 17.0625rem; }
 
 .slider__menu--vertical {
   display: flex; }
