@@ -1122,9 +1122,8 @@ padding:0;
       padding: 0 16%; } }
 
 .products__image-section {
-  /*
-  transform: translate(rem(10px), rem(40px));
-  min-width: 40%;*/ }
+  transform: translate(0.625rem, 2.5rem);
+  min-width: 40%; }
   @media screen and (max-width: 768px) {
     .products__image-section {
       order: -1;

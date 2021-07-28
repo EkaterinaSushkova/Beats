@@ -82,9 +82,8 @@ $pink: #E01F3D;
     }
 }
 .products__image-section {
-    /*
     transform: translate(rem(10px), rem(40px));
-    min-width: 40%;*/
+    min-width: 40%;
     @include tablets {
         order:-1;
         transform: translate(0,0);
