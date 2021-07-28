@@ -1211,4 +1211,10 @@ padding:0;
 .btnactive {
   display: none; }
 
+.products__price {
+  display: flex; }
+
+.feature__icon {
+  display: flex; }
+
 /*# sourceMappingURL=main.css.map */
