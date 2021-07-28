@@ -21,12 +21,18 @@
 .slider__menu__item{
     display: flex;
 }
+.slider__menu__link{
+text-decoration: none;
+}
+
 .btnactive {
     display: none;
 }
-.products__price {
-    display: flex;
-}
 .slider__feature__icon {
     display: flex;
+    max-width: 50px;
+    max-height: 80px;
+}
+.menu__link-feature {
+    margin-left: 80px;
 }
