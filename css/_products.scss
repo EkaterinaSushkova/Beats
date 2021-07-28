@@ -148,11 +148,15 @@ $pink: #E01F3D;
 }
 .products__price {
     font-size: rem(36px);
+    display: flex;
+    @include tablets {
+        align-items: center;
+    }
+    @include phones {
+        align-items: center;
+    }
 }
 .products__btn {
 margin-bottom: rem(20px);
 margin-left: rem(20px);
-}
-.products__price {
-    display: flex;
 }
