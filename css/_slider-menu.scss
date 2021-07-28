@@ -1,0 +1,22 @@
+.slider__menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #666666;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.slider__menu--vertical {
+    display: flex;
+}
+.slider__menu--vertical .menu__list{
+    flex-direction: column;
+    color: white;
+    :hover {
+        color: $pink;
+    }
+}

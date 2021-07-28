@@ -36,6 +36,7 @@ $pink: #E01F3D;
 }
 .products__title-section {
     width: 50%;
+    margin-left: 30px;
 
     @include tablets {
         width: 100%;
@@ -103,9 +104,30 @@ $pink: #E01F3D;
         flex-direction: column;
     }
 }
+.products__image-wrapper{
+    display:flex;
+    align-items: center;
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+    display: none;
+    }
+}
 
 .products__card-list {
-display: flex;
+    display: flex;
+   
+    @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    }
+    @include phones {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        }
 }
 .products__card-item {
     display: flex;
@@ -126,4 +148,7 @@ display: flex;
 }
 .products__price {
     font-size: rem(36px);
+}
+.products__btn {
+margin-bottom: rem(20px);
 }

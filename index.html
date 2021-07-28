@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -174,7 +174,7 @@
                             </div>
                             <div class="products__title-section">
                                 <div class="products__image-wrapper">
-                                    <svg class="slider__icon">
+                                    <svg class="slider__icon" id="btnactive">
                                         <use xlink:href="./sprite.svg#click">
                                         </use>
                                     </svg>                                       
@@ -368,32 +368,57 @@
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
         </nav>
-        
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Наушники</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Команда</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Цвета</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="slider__menu" id="slidermenu">
+            <a href="#" class="slider-menu__close"></a>
+            <nav class="menu slider__menu--vertical">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="feature__icon">
+                            <svg class="hello_features__link">
+                                <use xlink:href="./sprite.svg#noises">
+                                </use>
+                            </svg>
+                        </div>
+                        <a href="#" class="menu__link">Bluetooth</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="feature__icon">
+                            <svg class="hello_features__link">
+                                <use xlink:href="./sprite.svg#noises">
+                                </use>
+                            </svg>
+                        </div>
+                        <a href="#" class="menu__link">Дальность</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="feature__icon">
+                            <svg class="hello_features__link">
+                                <use xlink:href="./sprite.svg#noises">
+                                </use>
+                            </svg>
+                        </div>
+                        <a href="#" class="menu__link">Зарядка</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="feature__icon">
+                            <svg class="hello_features__link">
+                                <use xlink:href="./sprite.svg#noises">
+                                </use>
+                            </svg>
+                        </div>
+                        <a href="#" class="menu__link">Вес</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="feature__icon">
+                            <svg class="hello_features__link">
+                                <use xlink:href="./sprite.svg#noises">
+                                </use>
+                            </svg>
+                        </div>
+                        <a href="#" class="menu__link">Гарантия</a>
+                    </li>
+                </ul>
+        </div>
         <div class="fullscreen-menu" id="active">
             <a href="#" class="fullscreen-menu__close"></a>
             <nav class="menu menu--vertical">
@@ -425,6 +450,8 @@
         <script>
             const hamburgerButton = document.querySelector('#hamburgerButton');
             const active = document.querySelector('#active');
+            const slidermenu = document.querySelector('#slidermenu');
+            const btnactive = document.querySelector('#btnactive');
 
             hamburgerButton.addEventListener('click',function() {
                 active.style.display = 'flex'
@@ -432,6 +459,13 @@
             active.addEventListener('click',function() {
                 active.style.display = 'none'
             });
+            slidermenu.addEventListener('click',function() {
+                active.style.display = 'flex'
+            });
+            btnactive.addEventListener('click',function() {
+                active.style.display = 'none'
+            });
+
 
         </script>
     </body>
