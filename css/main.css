@@ -1202,10 +1202,10 @@ padding:0;
 .slider__menu--vertical {
   display: flex; }
 
-.slider__menu--vertical .menu__list {
+.slider__menu__list {
   flex-direction: column;
   color: white; }
-  .slider__menu--vertical .menu__list :hover {
+  .slider__menu__list :hover {
     color: #E01F3D; }
 
 .btnactive {
