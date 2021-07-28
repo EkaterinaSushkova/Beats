@@ -1192,7 +1192,7 @@ padding:0;
 .slider__menu {
   display: none;
   position: absolute;
-  top: 5.625rem;
+  top: 0;
   background: #666666;
   align-items: center;
   justify-content: center;
@@ -1207,6 +1207,9 @@ padding:0;
   color: white; }
   .slider__menu__list :hover {
     color: #E01F3D; }
+
+.slider__menu__item {
+  display: flex; }
 
 .btnactive {
   display: none; }

@@ -1,7 +1,7 @@
 .slider__menu {
     display: none;
     position: absolute;
-    top: rem(90px);
+    top: 0;
     background: #666666;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,9 @@
     :hover {
         color: $pink;
     }
+}
+.slider__menu__item{
+    display: flex;
 }
 .btnactive {
     display: none;
