@@ -1,0 +1,126 @@
+
+//colors
+$gray:#F5F5F5;
+$black: #292929;
+$pink: #E01F3D;
+
+.products-section {
+    background-color: $gray;
+    color: $black;
+    position: relative;
+
+
+    &:before, &:after {
+       @include tablets {
+           display: none;
+       }
+    }
+
+    &:before {
+        position: absolute;
+        bottom: rem(-30px);
+        right: 2%;
+        content: "";
+        width: rem(60px);
+        height: rem(60px);
+        background-color: #292929;
+        transform: rotate(-18deg);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    }
+}
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(24px) 0 rem(60px);
+}
+.products__title-section {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    @include phones {
+        width: 70%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.products__main-title {
+    font-size: rem(48px);
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: rem(20px);
+    margin-top: rem(10px);
+    text-transform: uppercase;
+    @include tablets {
+        padding: 0 10%;
+    }
+}
+.products__title--desc {
+    font-size: rem(21px);
+    margin-bottom: rem(30px);
+    padding-right: 10%;
+    font-family: "Alegreya Sans", Helvetica, sans-serif;
+
+    @include tablets {
+        padding: 0 24%;
+    }
+    @include phones {
+        padding: 0 16%;
+    }
+}
+.products__image-section {
+    /*
+    transform: translate(rem(10px), rem(40px));
+    min-width: 40%;*/
+    @include tablets {
+        order:-1;
+        transform: translate(0,0);
+        margin-bottom: rem(40px);
+    }
+    @include phones {
+    max-width:70% 
+    }
+}
+.products-slider {
+    display:flex;
+    align-items: center;
+    @include tablets {
+        flex-direction: column;
+    }
+    @include phones {
+        flex-direction: column;
+    }
+}
+.products__card {
+    display: flex;
+}
+
+.products__card-list {
+display: flex;
+}
+.products__card-item {
+    display: flex;
+}
+.product-slider__arrow {
+    position: absolute;
+}
+
+.product-slider__arrow--direction--back{
+        left: 0px;
+    }
+.product-slider__arrow--direction--next{
+        right: 0;
+    }

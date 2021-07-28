@@ -747,17 +747,21 @@ img {
   justify-content: center; }
 
 .reviews-section {
-  position: relative; }
-  .reviews-section:before {
-    position: absolute;
-    bottom: -1.875rem;
-    right: 2%;
-    content: "";
-    width: 3.75rem;
-    height: 3.75rem;
-    background-color: #292929;
-    transform: rotate(-18deg);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+  position: relative;
+    /*
+    &:before {
+        position: absolute;
+        bottom: rem(-30px);
+        right: 2%;
+        content: "";
+        width: rem(60px);
+        height: rem(60px);
+        background-color: #292929;
+        transform: rotate(-18deg);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    }
+    */ }
 
 .interactive-avatar {
   width: 5rem;
@@ -789,17 +793,19 @@ img {
   background-position: center;
   background-color: black;
   color: #fff;
-  position: relative; }
-  .order-section:before {
-    position: absolute;
-    bottom: -1.875rem;
-    left: 8%;
-    border-radius: 3.125rem;
-    content: "";
-    width: 2.875rem;
-    height: 2.875rem;
-    background-color: #868686;
-    transform: rotate(-10deg); }
+  position: relative;
+  /*
+      &:before {
+          position: absolute;
+          bottom: rem(-30px);
+          left: 8%;
+          border-radius: rem(50px);
+          content: "";
+          width: rem(46px);
+          height: rem(46px);
+          background-color: #868686;
+          transform: rotate(-10deg);
+  } */ }
 
 .form {
   display: flex; }
@@ -1047,5 +1053,113 @@ padding:0;
   font-size: 36px; }
   .menu--vertical .menu__list :hover {
     color: #E01F3D; }
+
+.products-section {
+  background-color: #F5F5F5;
+  color: #292929;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .products-section:before, .products-section:after {
+      display: none; } }
+  .products-section:before {
+    position: absolute;
+    bottom: -1.875rem;
+    right: 2%;
+    content: "";
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #292929;
+    transform: rotate(-18deg);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 3.75rem; }
+
+.products__title-section {
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .products__title-section {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .products__title-section {
+      width: 70%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+
+.products__main-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  margin-top: 0.625rem;
+  text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .products__main-title {
+      padding: 0 10%; } }
+
+.products__title--desc {
+  font-size: 1.3125rem;
+  margin-bottom: 1.875rem;
+  padding-right: 10%;
+  font-family: "Alegreya Sans", Helvetica, sans-serif; }
+  @media screen and (max-width: 768px) {
+    .products__title--desc {
+      padding: 0 24%; } }
+  @media screen and (max-width: 480px) {
+    .products__title--desc {
+      padding: 0 16%; } }
+
+.products__image-section {
+  /*
+  transform: translate(rem(10px), rem(40px));
+  min-width: 40%;*/ }
+  @media screen and (max-width: 768px) {
+    .products__image-section {
+      order: -1;
+      transform: translate(0, 0);
+      margin-bottom: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .products__image-section {
+      max-width: 70%; } }
+
+.products-slider {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .products-slider {
+      flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .products-slider {
+      flex-direction: column; } }
+
+.products__card {
+  display: flex; }
+
+.products__card-list {
+  display: flex; }
+
+.products__card-item {
+  display: flex; }
+
+.product-slider__arrow {
+  position: absolute; }
+
+.product-slider__arrow--direction--back {
+  left: 0px; }
+
+.product-slider__arrow--direction--next {
+  right: 0; }
 
 /*# sourceMappingURL=main.css.map */
