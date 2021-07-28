@@ -1144,9 +1144,6 @@ padding:0;
     .products-slider {
       flex-direction: column; } }
 
-.products__card {
-  display: flex; }
-
 .products__card-list {
   display: flex; }
 
@@ -1161,5 +1158,12 @@ padding:0;
 
 .product-slider__arrow--direction--next {
   right: 0; }
+
+.info__card__feature-bold {
+  margin-right: 1.875rem;
+  font-weight: bold; }
+
+.products__price {
+  font-size: 2.25rem; }
 
 /*# sourceMappingURL=main.css.map */
