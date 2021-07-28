@@ -460,11 +460,11 @@
                 active.style.display = 'none'
             });
 
-            slidermenu.addEventListener('click',function() {
-                active.style.display = 'none'
-            });
             btnactive.addEventListener('click',function() {
-                active.style.display = 'flex'
+                slidermenu.style.display = 'flex'
+            });
+            slidermenu.addEventListener('click',function() {
+                slidermenu.style.display = 'none'
             });
         </script>
     </body>
