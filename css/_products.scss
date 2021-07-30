@@ -105,8 +105,12 @@ $pink: #E01F3D;
     }
 }
 .products__image-wrapper{
-    display:flex;
-    align-items: center;
+    display: inline-block;
+    position: relative;
+    .slider__menu:hover  {
+        left: 100%;
+        opacity: 1;
+    }
     @include tablets {
         display: none;
     }
@@ -119,14 +123,14 @@ $pink: #E01F3D;
     display: flex;
    
     @include tablets {
-    flex-direction: column;
-    text-align: center;
+        text-align: left;
     align-items: center;
+    justify-content: center;
     }
     @include phones {
-        flex-direction: column;
-        text-align: center;
+        text-align: left;
         align-items: center;
+        justify-content: center;
         }
 }
 .products__card-item {
@@ -138,9 +142,25 @@ $pink: #E01F3D;
 
 .product-slider__arrow--direction--back{
     left: -50px;
+    @include tablets {
+        left: 10%;
+        right: 30%;
     }
+    @include phones {
+        left: 10%;
+        right: 30%;
+    }
+}
 .product-slider__arrow--direction--next{
     right: -50px;
+    @include tablets {
+        right: 10%;
+        right: 30%;
+    }
+    @include phones {
+        right: 10%;
+        right: 30%;
+    }
     }
 .info__card__feature-bold {
     margin-right: rem(30px);
@@ -151,9 +171,11 @@ $pink: #E01F3D;
     display: flex;
     @include tablets {
         align-items: center;
+        justify-content: center;
     }
     @include phones {
         align-items: center;
+        justify-content: center;
     }
 }
 .products__btn {

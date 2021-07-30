@@ -1,5 +1,4 @@
 .slider__menu {
-    display: none;
     position: absolute;
     top: 0;
     background: #666666;
@@ -7,6 +6,8 @@
     justify-content: center;
     z-index: 2;
     width: 273px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 .slider__menu--vertical {
     display: flex;
@@ -35,4 +36,10 @@ text-decoration: none;
 }
 .menu__link-feature {
     margin-left: 80px;
+}
+.slider__icon {
+    display: inline-block;
+    width: 91px;
+    height: 91px;
+    cursor: pointer;
 }
