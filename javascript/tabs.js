@@ -1,8 +1,7 @@
-const findBlockByAlias = (alias) => {
-    $(".reviews__item").filter((ndx, item)=> {
+const findBlockByAlias = (alias) => 
+   $(".reviews__item").filter((ndx, item)=> {
         return $(item).attr("data-linked-with") === alias;
     });
-};
 
 $(".interactive-avatar__link").click((e)=> {
     e.preventDefault();
