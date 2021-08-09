@@ -17,7 +17,6 @@ $pink: #E01F3D;
     }
 }
 .products__wrapper-menu {
-    display: flex;
     @include tablets {
         flex-direction: column;
     }
