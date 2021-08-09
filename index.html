@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -163,15 +164,13 @@
                 <section class="section products-section">
                     <div class="container">
                         <div class="products-slider">
+                            <!-- 
                             <div class="products-slider__arrows">
                                 <a href="#" class="product-slider__arrow product-slider__arrow--direction--back"><img src="./img/arrowleft.png">
                                 </a>
                                 <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"><img src="./img/arrowright.png">
                                 </a>
-                            </div>
-                            <div class="products__image-section">
-                                <img src="./img/ellipsetwo.png" class="products__image">
-                            </div>
+                            </div> -->
                             <div class="products__title-section">
                                 <div class="products__image-wrapper" id="btnactive">
                                     <svg class="slider__icon">
@@ -234,32 +233,145 @@
                                             </ul>
                                     </div>                                       
                                 </div>
-                                <h1 class="products__main-title">Беспроводные наушники Beats Solo 3</h1>                            
-                                <div class="products__card">
-                                    <div class="products__title--desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
-                                    <ul class="products__card-list">
-                                        <li class="products__card-item">
-                                            <div class="card__feauture">
-                                                <span class="info__card__feature">Зарядка</span>
-                                                <h3 class="info__card__feature-bold">2 часа</h3>
+                                <ul class="products">
+                                    <li class="products__item product">
+                                        <div class="products__wrapper">
+                                            <div class="products__image-section">
+                                                <img src="./img/ellipsetwo.png" class="products__image">
                                             </div>
-                                        </li>
-                                        <li class="products__card-item">
-                                            <div class="card__feauture">
-                                                <span class="info__card__feature info__card__feature">Вес</span>
-                                                <h3 class="info__card__feature info__card__feature-bold">215 грамм</h3>
+                                            <div class="products__card">
+                                                <h1 class="products__main-title">Беспроводные наушники Beats Solo 3</h1>                            
+                                                <div class="products__title--desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
+                                                <ul class="products__card-list">
+                                                    <li class="products__card-item">
+                                                        <div class="card__feauture">
+                                                            <span class="info__card__feature">Зарядка</span>
+                                                            <h3 class="info__card__feature-bold">2 часа</h3>
+                                                        </div>
+                                                    </li>
+                                                    <li class="products__card-item">
+                                                        <div class="card__feauture">
+                                                            <span class="info__card__feature info__card__feature">Вес</span>
+                                                            <h3 class="info__card__feature info__card__feature-bold">215 грамм</h3>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="products__price">
+                                                    <p>14 990 ₽</p>
+                                                    <div class="products__btn">
+                                                        <a href="#" class="btn btn--theme--pink">Заказать</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </li>
-                                    </ul>
-                                    <div class="products__price">
-                                        <p>14 990 ₽</p>
-                                        <div class="products__btn">
-                                            <a href="#" class="btn btn--theme--pink">Заказать</a>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>                                
                         </div>
+                    </div>
+                </section>
+                <section class="section team-section">
+                    <div class="container">
+                        <h2 class="section__title">Команда</h2>
+                        <ul class="team team--version--desktop">
+                            <li class="team__item">
+                                <div class="team__member"><img src="./img/boris.png" class="photo__team-member"></div>
+                                <button class="team__title" type="button">Борис Федорович</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <h4>Главный технолог</h4>
+                                        <p>Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__member"><img src="./img/alla.png" class="photo__team-member"></div>
+                                <button class="team__title" type="button">Алла Иванова</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <h4>Специалист по упаковке</h4>
+                                        <p>Автор запоминающегося стиля 
+                                            наших батончиков.
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__member"><img src="./img/kirill.png" class="photo__team-member"></div>
+                                <button class="team__title" type="button">Кирилл Матросов</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <h4>Оператор</h4>
+                                        <p>Разработал дизан
+                                            наушников  beats solo 3.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__member"><img src="./img/mila.png" class="photo__team-member"></div>
+                                <button class="team__title" type="button">Мила Рыжкова</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <h4>PR, маркетинг</h4>
+                                        <p>По всем вопросам сотрудничества 
+                                            и рекламы писать только Миле. 
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- mobile -->
+                        <ul class="team team--version--mobile">
+                            <li class="team__item">
+                                <button class="team__title" type="button">Борис Федорович</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__member"><img src="./img/boris.png" class="photo__team-member"></div>
+                                        <h4>Главный технолог</h4>
+                                        <p>Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button class="team__title" type="button">Алла Иванова</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__member"><img src="./img/alla.png" class="photo__team-member"></div>
+                                        <h4>Специалист по упаковке</h4>
+                                        <p>Автор запоминающегося стиля 
+                                            наших батончиков.
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button class="team__title" type="button">Кирилл Матросов</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__member"><img src="./img/kirill.png" class="photo__team-member"></div>
+                                        <h4>Оператор</h4>
+                                        <p>Разработал дизан
+                                            наушников  beats solo 3.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button class="team__title" type="button">Мила Рыжкова</button>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__member"><img src="./img/mila.png" class="photo__team-member"></div>
+                                        <h4>PR, маркетинг</h4>
+                                        <p>По всем вопросам сотрудничества 
+                                            и рекламы писать только Миле. 
+                                            </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <section class="section reviews-section">
@@ -286,7 +398,7 @@
                                     <li class="reviews__item" data-linked-with="two">
                                         <div class="reviews__display-inner">
                                             <div class="reviews__avatar">
-                                                <img src="./img/billie.png" alt="" class="reviews__avatar-img">
+                                                <img src="./img/guyreviewbig.png" alt="" class="reviews__avatar-img">
                                             </div>
                                             <article class="reviews__content">
                                                 <div class="reviews__title">На долго хватает заряда</div>
@@ -301,7 +413,7 @@
                                     <li class="reviews__item" data-linked-with="three">
                                         <div class="reviews__display-inner">
                                             <div class="reviews__avatar">
-                                                <img src="./img/billie.png" alt="" class="reviews__avatar-img">
+                                                <img src="./img/girlreviewbig.png" alt="" class="reviews__avatar-img">
                                             </div>
                                             <article class="reviews__content">
                                                 <div class="reviews__title">Отличный звук</div>
@@ -316,7 +428,7 @@
                                 </ul>
                             </div>
                             <ul class="reviews-switcher">
-                                <li class="reviews-switcher__item active interactive-avatar interactive-avatar--active">
+                                <li class="reviews-switcher__item active interactive-avatar interactive-avatar active">
                                     <a class="interactive-avatar__link" data-open="one">
                                         <img src="./img/billie.png" alt="billie eilish" class="interactive-avatar__img">
                                     </a>
@@ -500,5 +612,9 @@
             crossorigin="anonymous">
         </script>
         <script src="./javascript/tabs.js"></script>
+        <script src="./javascript/acco.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="./javascript/slider.js"></script>
     </body>
 </html>

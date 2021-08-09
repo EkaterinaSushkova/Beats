@@ -5,7 +5,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    &--active {
+    &.active {
     border-color:  #E01F3D;
     }
 }
