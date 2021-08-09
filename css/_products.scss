@@ -11,10 +11,15 @@ $pink: #E01F3D;
 
 .products__wrapper {
     display: flex;
-    align-items: center;
     @include tablets {
     justify-content: space-evenly;
     flex-direction: column;
+    }
+}
+.products__wrapper-menu {
+    display: flex;
+    @include tablets {
+        flex-direction: column;
     }
 }
 

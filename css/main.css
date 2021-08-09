@@ -1097,11 +1097,16 @@ padding:0;
   align-items: center; }
 
 .products__wrapper {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   @media screen and (max-width: 768px) {
     .products__wrapper {
       justify-content: space-evenly;
+      flex-direction: column; } }
+
+.products__wrapper-menu {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .products__wrapper-menu {
       flex-direction: column; } }
 
 .products-section {
