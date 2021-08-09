@@ -1197,7 +1197,7 @@ padding:0;
   display: inline-block;
   position: absolute;
   position: absolute;
-  left: 49%;
+  left: 48%;
   top: -20%; }
   .products__image-wrapper .slider__menu:hover {
     left: 100%;
@@ -1208,6 +1208,9 @@ padding:0;
   @media screen and (max-width: 480px) {
     .products__image-wrapper {
       display: none; } }
+
+.products__card {
+  margin-top: 10px; }
 
 .products__card-list {
   display: flex; }

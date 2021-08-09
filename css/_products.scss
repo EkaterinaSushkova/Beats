@@ -123,7 +123,7 @@ $pink: #E01F3D;
     display: inline-block;
     position: absolute;
     position: absolute;
-    left: 49%;
+    left: 48%;
     top: -20%;
     .slider__menu:hover  {
         left: 100%;
@@ -136,7 +136,9 @@ $pink: #E01F3D;
     display: none;
     }
 }
-
+.products__card {
+    margin-top: 10px;
+}
 .products__card-list {
     display: flex;
    
