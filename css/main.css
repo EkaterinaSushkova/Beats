@@ -1295,7 +1295,8 @@ padding:0;
 
 .slider__menu__item {
   display: flex;
-  padding: 0 30px; }
+  justify-content: space-between;
+  align-content: flex-start; }
 
 .slider__menu__link {
   text-decoration: none; }
@@ -1304,12 +1305,8 @@ padding:0;
   display: none; }
 
 .slider__feature__icon {
-  display: flex;
   max-width: 50px;
   max-height: 80px; }
-
-.menu__link-feature {
-  margin-left: 80px; }
 
 .slider__icon {
   display: inline-block;
