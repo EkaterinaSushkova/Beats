@@ -28,6 +28,6 @@ $(".team__title").click((e) => {
         openItem($this);
     }
 
-    closeEveryItem(container);
-    openItem($this);
+    //closeEveryItem(container);
+    //openItem($this);
 });

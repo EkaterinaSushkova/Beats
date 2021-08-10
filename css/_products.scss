@@ -11,6 +11,7 @@ $pink: #E01F3D;
 
 .products__wrapper {
     display: flex;
+    //flex-shrink: 0;
     @include tablets {
     justify-content: space-evenly;
     flex-direction: column;
@@ -48,8 +49,8 @@ $pink: #E01F3D;
     padding: rem(24px) 0 rem(60px);
 }
 .products__title-section {
-    width: 50%;
-    margin-left: 30px;
+    // width: 50%;
+    // margin-left: 30px;
 
     @include tablets {
         width: 100%;

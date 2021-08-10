@@ -1,6 +1,7 @@
 const validateFields = (form, fieldsArray) => {
 
     fieldsArray.forEach((field) => {
+        console.log(field);
         field.removeClass("input-error");
             if(field.val().trim() == "") {
                 field.addClass("input-error");
@@ -35,6 +36,8 @@ $(".form").submit((e) => {
                 to: to.val(),
             },
         });
+    } else {
+        
     }
 
 
