@@ -1121,7 +1121,7 @@ padding:0;
     transform: rotate(-18deg);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
 
-.products-container {
+.products-section .container {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 0 3.75rem; }
@@ -1192,6 +1192,10 @@ padding:0;
   @media screen and (max-width: 480px) {
     .products-slider {
       flex-direction: column; } }
+  .products-slider .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none; }
 
 .products__image-wrapper {
   display: inline-block;

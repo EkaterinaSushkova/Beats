@@ -42,7 +42,7 @@ $pink: #E01F3D;
     }
 }
 
-.products-container {
+.products-section .container {
     display: flex;
     justify-content: space-between;
     padding: rem(24px) 0 rem(60px);
@@ -118,6 +118,11 @@ $pink: #E01F3D;
     }
     @include phones {
         flex-direction: column;
+    }
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
     }
 }
 .products__image-wrapper{
