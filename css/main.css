@@ -567,6 +567,16 @@ img {
     color: #E01F3D;
     background: #fff; }
 
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0; }
+
+button .close {
+  position: absolute;
+  right: 0; }
+
 .section {
   min-height: 40.625rem;
   display: flex;
@@ -1374,10 +1384,34 @@ padding:0;
     .team__title {
       outline: none; } }
 
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  padding: 0; }
+.modal {
+  display: none; }
+  .modal.error-modal .modal__content {
+    color: red; }
+  .modal.fancybox-content {
+    padding: 0 !important; }
+  .modal .fancybox-button {
+    display: none; }
+
+.modal__container {
+  margin: auto;
+  background: #fff;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000; }
+
+.message-sent {
+  position: relative;
+  padding-top: 30px; }
+
+button.close {
+  position: absolute;
+  right: 5px;
+  top: 5px; }
 
 /*# sourceMappingURL=main.css.map */

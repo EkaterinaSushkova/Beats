@@ -1,0 +1,38 @@
+.modal {
+    display: none;
+
+    &.error-modal {
+        .modal__content {
+            color: red;
+        }
+    }
+    &.fancybox-content {
+        padding: 0 !important;
+    }
+
+    .fancybox-button {
+        display: none;
+    }
+}
+.modal__container{
+    margin: auto;
+    background: #fff;
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__content {
+    margin-bottom: 15px;
+    color: #000;
+}
+.message-sent {
+    position: relative;
+    padding-top: 30px;
+}
+button.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

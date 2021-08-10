@@ -26,3 +26,14 @@
         background: $white;
     }
 }
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+button .close {
+    position: absolute;
+    right: 0;
+}

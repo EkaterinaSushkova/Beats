@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 </head>
     <body>
         <div class="wrapper">
@@ -542,39 +543,40 @@
                     <div class="container">
                         <h2 class="section__title">Закажите доставку</h2>
                         <form class="form">
+                            <input type="hidden" name="to" value="somewhere@mail.com">
                             <div class="form__col">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="name" class="form__input">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="phone" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="street" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="home" class="form__input">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="part" class="form__input">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="flat" class="form__input">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" name="floor" class="form__input">
                                     </label>
                                 </div>
                             </div>
@@ -648,6 +650,18 @@
                 </section>
             </div>
         </div>
+        <div id="modal" class="modal">
+            <div class="modal__container">
+                <div class="modal__content">
+                    <button type="button" class="close" data-dismiss="modal"
+                    ng-click="$dismiss()" aria-hidden="true">&times;</button>    
+                    <p class="message-sent">Сообщение отправлено</p> 
+                </div>
+                <div class="modal__button-container">
+                    <a href="#" class="btn app-submit-btn btn--theme--pink">Закрыть</a>
+                </div>
+            </div>
+        </div>
         <nav class="fixed-menu">
             <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
@@ -660,6 +674,8 @@
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
         </nav>
         <div class="fullscreen-menu" id="active">
+            <button type="button" class="close" data-dismiss="modal"
+            ng-click="$dismiss()" aria-hidden="true">&times;</button> 
             <a href="#" class="fullscreen-menu__close"></a>
             <nav class="menu menu--vertical">
                 <ul class="menu__list">
@@ -708,5 +724,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="./javascript/slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> 
+        <script src="./javascript/modal.js"></script>
     </body>
 </html>
