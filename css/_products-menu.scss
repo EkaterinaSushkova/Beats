@@ -1,0 +1,60 @@
+.products-menu__section {
+    background: url(/img/sportsgirl.png) center center/cover no-repeat;
+    position: relative;
+    color: #fff ;
+}
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+.products-menu__item{
+    display: flex;
+}
+.products-menu-section__title {
+    position: absolute;
+    top: rem(70px);
+    left: rem(30px);
+}
+.products-menu__title {
+    position: relative;
+    width: 100px;
+    display: flex;
+}
+.products-menu__title-gray {
+    background: #999999;
+}
+
+.products-menu__title-black {
+background: #151515;
+}
+
+.products-menu__title-pink {
+background: $pink;
+}
+.products-menu__text {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: rem(50px);
+    font-size: rem(36px);
+    left: rem(-40px);
+}
+.products-menu__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+.products-menu__container {
+    padding: 40px 73px 45px 26px;
+}
+.products-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+}
