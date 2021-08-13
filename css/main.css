@@ -898,7 +898,7 @@ button .close {
       .form__input--textarea {
         height: 5.3125rem; } }
   .form__input:hover {
-    border-color: gray; }
+    border-color: #E01F3D; }
   .form__input:focus {
     border: solid 0.25rem #E01F3D; }
   @media screen and (max-width: 768px) {

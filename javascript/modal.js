@@ -28,7 +28,7 @@ $(".form").submit((e) => {
     modal.removeClass("error-modal");
 
     const isValid = validateFields(form, [name, phone, comment, to]);
- 
+    
 
     if (isValid) {
         const request = $.ajax({
