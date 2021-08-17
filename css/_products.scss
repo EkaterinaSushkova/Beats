@@ -96,9 +96,11 @@ $pink: #E01F3D;
         padding: 0 16%;
     }
 }
+.products__image {
+    max-width: 452px;    
+}
 .products__image-section {
         transform: translate(-1.375rem, -3.5rem);
-        min-width: 90%;
         position: relative;
     @include tablets {
         order:-1;
