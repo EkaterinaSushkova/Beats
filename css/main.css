@@ -584,7 +584,8 @@ button .close {
   min-height: 40.625rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  height: 100vh; }
   .section--font-color--white {
     color: #fff; }
     .section--font-color--white .section__title {
