@@ -990,6 +990,9 @@ padding:0;
   list-style: none;
   z-index: 100; }
 
+.fixed-menu--shadowed {
+  color: #E01F3D; }
+
 .fixed-menu__item {
   margin-bottom: 0.3125rem; }
 
@@ -1036,6 +1039,9 @@ padding:0;
   margin: 0.0625rem; }
 
 .contacts-section {
+  position: relative; }
+
+.maps-section {
   position: relative; }
 
 .footer {

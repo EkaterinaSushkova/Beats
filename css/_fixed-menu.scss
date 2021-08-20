@@ -5,6 +5,9 @@
     list-style: none;
     z-index: $z-fixed-menu;
 }
+.fixed-menu--shadowed {
+    color: $pink;
+}
 .fixed-menu__item {
     margin-bottom: rem(5px);}
 .fixed-menu__item--active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link {
