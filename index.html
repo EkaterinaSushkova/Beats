@@ -580,8 +580,23 @@
                 <section data-section-id="work" class="section work">
                     <div class="container">
                         <h2 class="section__title">Как мы работаем</h2>
-                        <div class="video-image">
-                            <img src="./img/player.png">
+                        <div class="work-section__container">
+                            <div class="player active">
+                                <div class="player__wrapper">
+                                    <div id="yt-player" class="player__elem"></div>
+                                    <div class="player__splash"></div>
+                                </div>
+                                <div class="player__controls">
+                                    <button class="player__start"></a> </button>
+                                    <div class="player__playback">
+                                        <button class="player__playback-button"></button>
+                                    </div>
+                                    <div class="player__duration">
+                                        <button class="player__sound-icon"></button>
+                                        <span class="player__sound-scroll">---</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -778,5 +793,7 @@
         <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
         </script>
         <script src="./javascript/maps.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="../beats/javascript/player.js"></script>
     </body>
 </html>

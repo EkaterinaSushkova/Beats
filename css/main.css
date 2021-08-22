@@ -1483,8 +1483,46 @@ button.close {
   border: none;
   background: transparent; }
 
-.video-image {
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: #3e3e3e;
   display: flex;
-  justify-content: center; }
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px; }
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/play.png) center center/cover no-repeat;
+  cursor: pointer; }
+
+.player__start {
+  height: 16px;
+  width: 11px;
+  background: url(../img/playsmall.png) no-repeat; }
+
+.player__playback-button {
+  height: 14px;
+  width: 15px;
+  background: url(../img/regulator.png) no-repeat; }
+
+.player__sound-icon {
+  height: 17px;
+  width: 21px;
+  background: url(../img/soundicon.png) no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
