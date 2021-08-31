@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    @include tablets {
+    }
     &--font-color--white {
         color: $white;
         .section__title {
